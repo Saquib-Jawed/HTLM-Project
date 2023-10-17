@@ -175,7 +175,8 @@ ul.header-flex {
 .skills-list {
     max-width: 768px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    ;
     gap: 50px;
     margin-block: 20px;
     width: auto;
@@ -330,4 +331,39 @@ ul.header-flex {
     text-align: center;
     margin-block: -30px 30px;
     font-size: 13px;
+}
+
+
+
+
+.contact-form {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 768px;
+    flex-direction: column;
+}
+
+.contact-form :is(input, textarea) {
+    background-color: #393939;
+    outline: none;
+    padding: 12px 20px;
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+.contact-form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.contact-form :is(input, textarea):focus-visible {
+    border-color: #FFB257;
+}
+
+.contact-button {
+    width: 100%;
+    max-width: 100%;
+    border: none;
 }
