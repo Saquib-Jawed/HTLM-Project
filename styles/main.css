@@ -79,13 +79,31 @@ section {
     background-repeat: no-repeat;
 }
 
-section h2 {
+section :is(h2, h3) {
     font-weight: 400;
     margin-block: 50px;
     font-size: 30px;
 }
 
-section h2 span {
+section h3 {
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+    align-self: flex-start;
+}
+
+section h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #FFB257;
+    inset: auto -10px -10px -100px;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section :is(h2, h3) span {
     color: #FFBC8B;
 }
 

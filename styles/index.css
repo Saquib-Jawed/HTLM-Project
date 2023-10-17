@@ -144,6 +144,24 @@ ul.header-flex {
     color: #FFE8BB;
 }
 
+.about-edu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #2D2E31;
+    border-radius: 10px;
+    margin-block: 20px;
+    padding: 20px;
+}
+
+.about-edu-left {
+    text-align: left;
+}
+
+.about-edu-right {
+    text-align: right;
+}
 
 
 
@@ -157,8 +175,10 @@ ul.header-flex {
 .skills-list {
     max-width: 768px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 50px 80px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));;
+    gap: 50px;
+    margin-block: 20px;
+    width: auto;
 }
 
 .skills-card {
@@ -172,6 +192,7 @@ ul.header-flex {
     border-radius: 10px;
     padding: 20px;
     font-size: 14px;
+    width: 100%;
 }
 
 .skills-card:hover {
