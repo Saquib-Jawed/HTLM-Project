@@ -1,7 +1,6 @@
-.about h4 {
-    text-align: left;
-}
-.projects {
+
+.projects,
+.projects-splat {
     background-color: #2D2E31;
 }
 .about-banner-right {
@@ -13,8 +12,10 @@
     padding-top: 0;
 }
 
-.about h4 {
+.about h4,
+.projects-splat h4 {
     max-width: 100%;
+    text-align: left;
 }
 
 .skills-list-more {

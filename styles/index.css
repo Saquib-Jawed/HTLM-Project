@@ -223,6 +223,7 @@ ul.header-flex {
 }
 
 .projects-card {
+    text-decoration: none;
     border-radius: 10px;
     color: #333333;
     background-color: #ffffff;
@@ -270,6 +271,33 @@ ul.header-flex {
 
 
 
+
+
+.projects-splat h4 {
+    max-width: 768px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.projects-splat h5 {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    color: #FFBC8B;
+}
+
+.projects-splat-banner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10vw;
+}
+
+.projects-splat-banner > * {
+    flex: 1;
+    text-align: left;
+}
 
 
 .contacts {
